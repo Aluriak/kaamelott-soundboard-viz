@@ -1,0 +1,6 @@
+*.html
+*.pyc
+*.vim
+__pycache__/
+sounds.json
+venv/
