@@ -11,7 +11,8 @@ Nécessite [clyngor](https://github.com/aluriak/clyngor), et par extension [clin
 
 - `./shortener.py`: code python qui gère tout le processus de calcul
 - `./shortener-data.lp`: fichier auto-généré, utilisé avec `shortener.lp` pour résoudre le problème
-- `./shortener-out.txt`: exemple de proposition de raccourcissement
+- `./out-shortener.txt`: exemple de proposition de raccourcissement
+- `./out-choices.txt`: démonstration des choix sur les mots spécifiques
 - `./shortener.lp`: code ASP cherchant les possibilités de raccourcissement
 
 

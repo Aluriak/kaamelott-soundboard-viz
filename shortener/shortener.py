@@ -9,12 +9,14 @@ import clyngor
 from collections import defaultdict
 
 MAX_SEARCH_TIME = 30  # (seconds)  avoid < 10
+SHOW_CHOICES = True  # set to False to prevent useless lines
 
 def get_words_per_file():
-    for fname in glob.glob("sounds/*.mp3"):
+    for idx, fname in enumerate(glob.glob("sounds/*.mp3"), start=1):
         fname = os.path.basename(os.path.splitext(fname)[0])
         words = fname.replace('-', '_').split("_")
         yield fname, tuple(words)
+    print(f'{idx} files found in sounds/*.mp3')
 
 
 def atoms_from_words(words: tuple) -> [str]:
@@ -51,9 +53,15 @@ def words_with_specific(words: tuple) -> dict:
             specifics[next(iter(fnames))].add(word)
     for fname, assoc_words in specifics.items():
         # TODO: allow to choose depending of other metrics (min, letter surreprensation,…)
+        many_choices = len(assoc_words) > 1
+        if SHOW_CHOICES and many_choices:
+            print(f"file {fname} associated with {len(assoc_words)} words: {', '.join(assoc_words)}. ", end='')
         if any('z' in w for w in assoc_words):  # prefer words with a 'z' inside
             assoc_words = (w for w in assoc_words if 'z' in w)
-        yield fname, max(assoc_words, key=len)
+        chosen = max(assoc_words, key=len)
+        if SHOW_CHOICES and many_choices:
+            print(f"{chosen} was chosen.")
+        yield fname, chosen
 
 
 def precompute_shortened_words(words: tuple) -> tuple:
