@@ -5,4 +5,4 @@
 
 - see and play with [Kaamelott soundboard](https://github.com/2ec0b4/kaamelott-soundboard) first.
 - get the [sounds.json](https://github.com/2ec0b4/kaamelott-soundboard/blob/master/sounds/sounds.json) from it.
-- use `plot-stats.py` to get something like [this](examples/citation-count-heatmap.html)
+- use `plot-stats.py` to get something like [this](out/citation-count-heatmap.html)
