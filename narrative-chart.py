@@ -108,7 +108,7 @@ if __name__ == '__main__':
     EPISODES = 0  # 0 means all
     FILE_OUT_TEMPLATE = "out/narrative_chart_{uid}.htm"
     CASES = {
-        # (1, range(1, 11)): '1_1-11',
+        (1, range(1, 11)): '1_1-10',
         # (1, 0): '1-all',
         (0, 0): 'all',
     }
