@@ -1,10 +1,14 @@
 
-all:
+gen-viz:
 	python citation-wordcloud.py
 	python citation-heatmap.py
 	python characters-representation.py
 	python narrative-chart.py
+	python interaction-graph.py
 	- cp out/* blog-kaamelott-dir
 
-update_data:
-	wget https://raw.githubusercontent.com/2ec0b4/kaamelott-soundboard/master/sounds/sounds.json
+update-data:
+	cd resources && $(MAKE) update_data
+
+
+all: update-data gen-viz

@@ -1,4 +1,5 @@
 # Visualization of Kaamelott Soundboard data
+Results are living in [my personnal blog](https://lucas.bourneuf.net/blog/kaamelott-viz.html)
 
 ## usage
 (first step is enough for most users)
@@ -6,3 +7,5 @@
 - see and play with [Kaamelott soundboard](https://github.com/2ec0b4/kaamelott-soundboard) first.
 - get the [sounds.json](https://github.com/2ec0b4/kaamelott-soundboard/blob/master/sounds/sounds.json) from it.
 - use `plot-stats.py` to get something like [this](out/citation-count-heatmap.html)
+
+See [`Makefile`](Makefile) for recipes to get many other data visualization, such as character representation or word clouds.
