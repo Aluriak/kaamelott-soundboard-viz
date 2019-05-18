@@ -8,7 +8,7 @@ DATAFILE_URL = 'https://raw.githubusercontent.com/2ec0b4/kaamelott-soundboard/ma
 REGEX_INFO = re.compile(r'Livre ([IV]+), ([0-9]+) - (.*)')
 LIVRE_NUMBER = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7}
 LIVRE_ROMAN = {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 'VII': 7}
-LIVRE_ORDER = 'I', 'II', 'III', 'IV', 'V', 'VI', 'VI'
+LIVRE_ORDER = 'I', 'II', 'III', 'IV', 'V', 'VI'
 LIVRE_ORDER_NUMERAL = tuple(LIVRE_NUMBER[l] for l in LIVRE_ORDER)
 Citation = namedtuple('Citation', 'text, characters')
 
