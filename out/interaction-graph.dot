@@ -1,125 +1,125 @@
 Digraph biseau_graph {
-	edge [color="white" fontcolor="white" arrowhead="none"];
+	edge [color="white" arrowhead="none" fontcolor="white"];
+	node [color="white" fontcolor="white"];
 	graph [bgcolor="black"];
-	node [fontcolor="white" color="white"];
-	"Dame Séli"
-	"Guethenoc"
-	"Dame Séli"->"Guethenoc" [penwidth="1"]
-	"Karadoc"
-	"Léodagan"
-	"Karadoc"->"Léodagan" [penwidth="1"]
-	"Arthur"
-	"Perceval"
-	"Arthur"->"Perceval" [penwidth="11"]
-	"La Dame du Lac"
-	"La Dame du Lac"->"Léodagan" [penwidth="1"]
-	"Bohort"
-	"Bohort"->"Léodagan" [penwidth="5"]
-	"Père Blaise"
-	"Arthur"->"Père Blaise" [penwidth="1"]
-	"Yvain"
-	"Bohort"->"Yvain" [penwidth="1"]
-	"Arthur"->"Yvain" [penwidth="2"]
-	"Appius Manilius"
-	"Loth"
-	"Appius Manilius"->"Loth" [penwidth="1"]
-	"Venec"
-	"Perceval"->"Venec" [penwidth="1"]
-	"Arthur"->"Guethenoc" [penwidth="3"]
-	"Léodagan"->"Yvain" [penwidth="4"]
-	"Hervé De Rinel"
-	"Arthur"->"Hervé De Rinel" [penwidth="1"]
 	"Guenièvre"
-	"Guenièvre"->"Léodagan" [penwidth="2"]
-	"Kadoc"
-	"Arthur"->"Kadoc" [penwidth="2"]
-	"Kay"
-	"Arthur"->"Kay" [penwidth="1"]
-	"Guenièvre"->"Yvain" [penwidth="1"]
-	"Elias de Kelliwic'h"
-	"Elias de Kelliwic'h"->"Loth" [penwidth="1"]
-	"Arthur"->"Venec" [penwidth="2"]
-	"Perceval"->"Père Blaise" [penwidth="1"]
-	"Arthur"->"Dame Séli" [penwidth="1"]
-	"Perceval"->"Yvain" [penwidth="1"]
-	"Kadoc"->"Léodagan" [penwidth="1"]
-	"Belt"
-	"Roparzh"
-	"Belt"->"Roparzh" [penwidth="1"]
 	"Lancelot"
-	"Merlin"
-	"Lancelot"->"Merlin" [penwidth="1"]
-	"Le Répurgateur"
-	"Kadoc"->"Le Répurgateur" [penwidth="1"]
-	"Arthur"->"Léodagan" [penwidth="9"]
-	"Bohort"->"Père Blaise" [penwidth="1"]
-	"Gauvain"
-	"Gauvain"->"Léodagan" [penwidth="1"]
-	"Gauvain"->"Yvain" [penwidth="2"]
-	"Le tavernier"
-	"Le tavernier"->"Perceval" [penwidth="1"]
-	"Le Maître d'armes"
-	"Le Maître d'armes"->"Le Répurgateur" [penwidth="1"]
-	"Dagonet"
-	"Dagonet"->"Lancelot" [penwidth="1"]
-	"Dame Séli"->"Léodagan" [penwidth="5"]
-	"Dame Séli"->"Guenièvre" [penwidth="1"]
-	"Le Maître d'armes"->"Perceval" [penwidth="1"]
-	"Guethenoc"->"Hervé De Rinel" [penwidth="1"]
-	"Spurius Cordius Frontiniu"
-	"Appius Manilius"->"Spurius Cordius Frontiniu" [penwidth="1"]
-	"Dame Séli"->"Yvain" [penwidth="1"]
-	"Guethenoc"->"Roparzh" [penwidth="2"]
 	"Guenièvre"->"Lancelot" [penwidth="1"]
-	"Karadoc"->"Le tavernier" [penwidth="2"]
-	"Le Maître d'armes"->"Léodagan" [penwidth="1"]
-	"Caius"
-	"Arthur"->"Caius" [penwidth="1"]
-	"Dame Séli"->"Karadoc" [penwidth="1"]
-	"Le tavernier"->"Léodagan" [penwidth="1"]
-	"Karadoc"->"Perceval" [penwidth="5"]
-	"Arthur"->"Guenièvre" [penwidth="6"]
-	"Kadoc"->"Le Maître d'armes" [penwidth="1"]
-	"Arthur"->"Le Maître d'armes" [penwidth="1"]
-	"Guethenoc"->"Perceval" [penwidth="1"]
-	"Le Roi Burgonde"
-	"Arthur"->"Le Roi Burgonde" [penwidth="1"]
-	"Galessin"
-	"Galessin"->"Loth" [penwidth="1"]
-	"Guethenoc"->"Léodagan" [penwidth="1"]
-	"Le Barde"
-	"Le Barde"->"Léodagan" [penwidth="1"]
-	"Kadoc"->"Karadoc" [penwidth="1"]
-	"Arthur"->"Bohort" [penwidth="5"]
-	"Léodagan"->"Venec" [penwidth="2"]
-	"Angharad"
-	"Angharad"->"Perceval" [penwidth="1"]
-	"Guethenoc"->"Karadoc" [penwidth="1"]
-	"Demetra"
-	"Demetra"->"Guenièvre" [penwidth="1"]
-	"Arthur"->"Lancelot" [penwidth="2"]
-	"Appius Manilius"->"Roparzh" [penwidth="1"]
-	"Angharad"->"Le tavernier" [penwidth="1"]
-	"Arthur"->"Demetra" [penwidth="1"]
-	"Bohort"->"Guenièvre" [penwidth="1"]
-	"Kadoc"->"Perceval" [penwidth="2"]
-	"Karadoc"->"Le Maître d'armes" [penwidth="1"]
+	"Dame Séli"
+	"Léodagan"
+	"Dame Séli"->"Léodagan" [penwidth="5" label="5"]
+	"Karadoc"
+	"Karadoc"->"Léodagan" [penwidth="1"]
+	"Dame Séli"->"Guenièvre" [penwidth="1"]
+	"Venec"
+	"Léodagan"->"Venec" [penwidth="2" label="2"]
+	"Perceval"
+	"Léodagan"->"Perceval" [penwidth="2" label="2"]
+	"Arthur"
+	"Merlin"
+	"Arthur"->"Merlin" [penwidth="3" label="3"]
+	"Yvain"
+	"Guenièvre"->"Yvain" [penwidth="1"]
 	"Breccan"
 	"Breccan"->"Léodagan" [penwidth="1"]
+	"Kadoc"
+	"Le Répurgateur"
+	"Kadoc"->"Le Répurgateur" [penwidth="1"]
+	"Dagonet"
+	"Arthur"->"Dagonet" [penwidth="1"]
+	"Appius Manilius"
+	"Spurius Cordius Frontiniu"
+	"Appius Manilius"->"Spurius Cordius Frontiniu" [penwidth="1"]
+	"Le Maître d'armes"
+	"Karadoc"->"Le Maître d'armes" [penwidth="1"]
+	"Demetra"
+	"Arthur"->"Demetra" [penwidth="1"]
+	"Le tavernier"
+	"Le tavernier"->"Léodagan" [penwidth="1"]
+	"Hervé De Rinel"
+	"Arthur"->"Hervé De Rinel" [penwidth="1"]
+	"Gauvain"
+	"Gauvain"->"Yvain" [penwidth="2" label="2"]
+	"Père Blaise"
+	"Léodagan"->"Père Blaise" [penwidth="1"]
+	"Lancelot"->"Merlin" [penwidth="1"]
+	"Caius"
+	"Arthur"->"Caius" [penwidth="1"]
+	"Angharad"
 	"Angharad"->"Karadoc" [penwidth="1"]
+	"Bohort"
+	"Bohort"->"Léodagan" [penwidth="5" label="5"]
+	"Angharad"->"Le tavernier" [penwidth="1"]
+	"Arthur"->"Kadoc" [penwidth="2" label="2"]
+	"Léodagan"->"Yvain" [penwidth="4" label="4"]
+	"Bohort"->"Yvain" [penwidth="1"]
+	"Galessin"
+	"Loth"
+	"Galessin"->"Loth" [penwidth="1"]
+	"Dagonet"->"Lancelot" [penwidth="1"]
+	"Arthur"->"Venec" [penwidth="2" label="2"]
+	"Le Maître d'armes"->"Perceval" [penwidth="1"]
+	"Le Barde"
+	"Le Barde"->"Léodagan" [penwidth="1"]
 	"Léodagan"->"Merlin" [penwidth="1"]
-	"Bohort"->"Venec" [penwidth="1"]
-	"Loth"->"Spurius Cordius Frontiniu" [penwidth="1"]
+	"Arthur"->"Perceval" [penwidth="11" label="11"]
+	"Kadoc"->"Le Maître d'armes" [penwidth="1"]
+	"Bohort"->"Père Blaise" [penwidth="1"]
 	"Mévanoui"
 	"Arthur"->"Mévanoui" [penwidth="1"]
-	"Arthur"->"Dagonet" [penwidth="1"]
-	"Léodagan"->"Perceval" [penwidth="2"]
+	"Guethenoc"
+	"Guethenoc"->"Karadoc" [penwidth="1"]
+	"Roparzh"
+	"Appius Manilius"->"Roparzh" [penwidth="1"]
+	"Bohort"->"Guenièvre" [penwidth="1"]
+	"Dame Séli"->"Yvain" [penwidth="1"]
 	"Guenièvre"->"Guethenoc" [penwidth="1"]
-	"Arthur"->"Merlin" [penwidth="3"]
+	"Kadoc"->"Karadoc" [penwidth="1"]
+	"Arthur"->"Bohort" [penwidth="5" label="5"]
+	"Loth"->"Spurius Cordius Frontiniu" [penwidth="1"]
+	"La Dame du Lac"
+	"La Dame du Lac"->"Léodagan" [penwidth="1"]
+	"Karadoc"->"Perceval" [penwidth="5" label="5"]
+	"Arthur"->"Dame Séli" [penwidth="1"]
+	"Dame Séli"->"Karadoc" [penwidth="1"]
+	"Le Maître d'armes"->"Léodagan" [penwidth="1"]
+	"Guethenoc"->"Hervé De Rinel" [penwidth="1"]
+	"Guenièvre"->"Léodagan" [penwidth="2" label="2"]
+	"Karadoc"->"Le tavernier" [penwidth="2" label="2"]
+	"Demetra"->"Guenièvre" [penwidth="1"]
+	"Guethenoc"->"Perceval" [penwidth="1"]
+	"Guethenoc"->"Roparzh" [penwidth="2" label="2"]
+	"Le Maître d'armes"->"Le Répurgateur" [penwidth="1"]
+	"Perceval"->"Yvain" [penwidth="1"]
+	"Kadoc"->"Léodagan" [penwidth="1"]
+	"Arthur"->"Karadoc" [penwidth="4" label="4"]
+	"Elias de Kelliwic'h"
+	"Elias de Kelliwic'h"->"Loth" [penwidth="1"]
+	"Kay"
+	"Arthur"->"Kay" [penwidth="1"]
+	"Le tavernier"->"Perceval" [penwidth="1"]
+	"Le Roi Burgonde"
+	"Arthur"->"Le Roi Burgonde" [penwidth="1"]
+	"Appius Manilius"->"Loth" [penwidth="1"]
 	"Attila"
 	"Attila"->"Léodagan" [penwidth="1"]
-	"Appius Manilius"->"Belt" [penwidth="1"]
-	"Arthur"->"Karadoc" [penwidth="4"]
-	"Léodagan"->"Père Blaise" [penwidth="1"]
+	"Bohort"->"Venec" [penwidth="1"]
 	"Bohort"->"Perceval" [penwidth="1"]
+	"Arthur"->"Léodagan" [penwidth="9" label="9"]
+	"Arthur"->"Père Blaise" [penwidth="1"]
+	"Arthur"->"Yvain" [penwidth="2" label="2"]
+	"Guethenoc"->"Léodagan" [penwidth="1"]
+	"Dame Séli"->"Guethenoc" [penwidth="1"]
+	"Angharad"->"Perceval" [penwidth="1"]
+	"Kadoc"->"Perceval" [penwidth="2" label="2"]
+	"Belt"
+	"Appius Manilius"->"Belt" [penwidth="1"]
+	"Gauvain"->"Léodagan" [penwidth="1"]
+	"Arthur"->"Guenièvre" [penwidth="6" label="6"]
+	"Perceval"->"Venec" [penwidth="1"]
+	"Arthur"->"Le Maître d'armes" [penwidth="1"]
+	"Perceval"->"Père Blaise" [penwidth="1"]
+	"Arthur"->"Lancelot" [penwidth="2" label="2"]
+	"Arthur"->"Guethenoc" [penwidth="3" label="3"]
+	"Belt"->"Roparzh" [penwidth="1"]
 }

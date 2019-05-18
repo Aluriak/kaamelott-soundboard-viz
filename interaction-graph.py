@@ -14,6 +14,8 @@ from collections import defaultdict
 
 FILE_OUT_DOT = 'out/interaction-graph.dot'
 FILE_OUT = 'out/interaction-graph.png'
+FILE_OUT_BBL = 'out/interaction-graph.bbl'
+FILE_OUT_ASP = 'out/interaction-graph.lp'
 
 
 def yield_characters_per_episode() -> [set]:
@@ -43,7 +45,7 @@ def get_nx_interaction_graph():
     return graph
 
 
-def biseau_encoding_of_interactions():
+def biseau_encoding_of_interactions(compress_to_bubble:bool=False):
     "Return ASP that encodes the interaction graph for biseau"
     asp_code = """
     link(C,D) :- share(C,D,_).
@@ -52,11 +54,23 @@ def biseau_encoding_of_interactions():
     obj_property(edge,(fontcolor;color),white).
     obj_property(node,(fontcolor;color),white).
     obj_property(edge,arrowhead,none).
+    label(C,D,N) :- share(C,D,N) ; N>1.
     """
     def gen_data():
         for (one, two), nb_interaction in get_characters_interactions().items():
             yield f'share("{one}","{two}",{nb_interaction}).'
-    return asp_code + ' '.join(gen_data())
+    asp = asp_code + ' '.join(gen_data())
+    if compress_to_bubble:
+        # generate bubble file
+        import clyngor, powergrasp
+        with open(FILE_OUT_ASP, 'w') as fd:
+            for model in clyngor.solve(inline=asp).by_predicate:
+                for a, b in model.get('link', ()):
+                    fd.write(f'edge({a},{b}).\n')
+        with open(FILE_OUT_BBL, 'w') as fd:
+            for line in powergrasp.compress_by_cc(FILE_OUT_ASP):
+                fd.write(line.replace('_c32_', '_').replace('_c39_', "'") + '\n')
+    return asp
 
 
 use_nx = False

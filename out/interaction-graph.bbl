@@ -1,0 +1,131 @@
+# CONNECTED COMPONENT 1
+NODE	Roparzh
+NODE	Léodagan
+NODE	Bohort
+NODE	La_Dame_du_Lac
+NODE	Dame_Séli
+NODE	Venec
+NODE	Le_Maître_d'armes
+NODE	Dagonet
+NODE	Attila
+NODE	Spurius_Cordius_Frontiniu
+NODE	Elias_de_Kelliwic'h
+NODE	Le_Répurgateur
+NODE	Galessin
+NODE	Breccan
+NODE	Père_Blaise
+NODE	Le_Barde
+NODE	Gauvain
+NODE	Hervé_De_Rinel
+NODE	Guethenoc
+NODE	Le_Roi_Burgonde
+NODE	Caius
+NODE	Perceval
+NODE	Kay
+NODE	Guenièvre
+NODE	Demetra
+NODE	Yvain
+NODE	Mévanoui
+NODE	Belt
+NODE	Arthur
+NODE	Appius_Manilius
+NODE	Merlin
+NODE	Lancelot
+NODE	Kadoc
+NODE	Karadoc
+NODE	Angharad
+NODE	Loth
+NODE	Le_tavernier
+SET	PWRN-Angharad-1-2	1.0
+SET	PWRN-Angharad-1-1	1.0
+SET	PWRN-Angharad-2-1	1.0
+SET	PWRN-Angharad-3-1	1.0
+SET	PWRN-Angharad-4-1	1.0
+SET	PWRN-Angharad-5-1	1.0
+SET	PWRN-Angharad-6-1	1.0
+SET	PWRN-Angharad-6-2	1.0
+SET	PWRN-Angharad-7-1	1.0
+SET	PWRN-Angharad-8-1	1.0
+SET	PWRN-Angharad-9-1	1.0
+SET	PWRN-Angharad-10-1	1.0
+SET	PWRN-Angharad-11-1	1.0
+IN	PWRN-Angharad-10-1	PWRN-Angharad-7-1
+IN	PWRN-Angharad-9-1	PWRN-Angharad-3-1
+IN	PWRN-Angharad-7-1	PWRN-Angharad-2-1
+IN	PWRN-Angharad-2-1	PWRN-Angharad-1-2
+IN	PWRN-Angharad-6-1	PWRN-Angharad-1-2
+IN	PWRN-Angharad-6-2	PWRN-Angharad-2-1
+IN	PWRN-Angharad-11-1	PWRN-Angharad-2-1
+IN	Perceval	PWRN-Angharad-1-2
+IN	Merlin	PWRN-Angharad-1-2
+IN	Arthur	PWRN-Angharad-1-1
+IN	Léodagan	PWRN-Angharad-1-1
+IN	Bohort	PWRN-Angharad-2-1
+IN	Mévanoui	PWRN-Angharad-3-1
+IN	Hervé_De_Rinel	PWRN-Angharad-3-1
+IN	Le_Roi_Burgonde	PWRN-Angharad-3-1
+IN	Caius	PWRN-Angharad-3-1
+IN	Dagonet	PWRN-Angharad-3-1
+IN	Kay	PWRN-Angharad-3-1
+IN	Le_Barde	PWRN-Angharad-4-1
+IN	Gauvain	PWRN-Angharad-4-1
+IN	La_Dame_du_Lac	PWRN-Angharad-4-1
+IN	Attila	PWRN-Angharad-4-1
+IN	Breccan	PWRN-Angharad-4-1
+IN	Le_tavernier	PWRN-Angharad-4-1
+IN	Roparzh	PWRN-Angharad-5-1
+IN	Belt	PWRN-Angharad-5-1
+IN	Spurius_Cordius_Frontiniu	PWRN-Angharad-5-1
+IN	Loth	PWRN-Angharad-5-1
+IN	Dame_Séli	PWRN-Angharad-6-1
+IN	Guenièvre	PWRN-Angharad-6-1
+IN	Guethenoc	PWRN-Angharad-6-2
+IN	Yvain	PWRN-Angharad-6-2
+IN	Karadoc	PWRN-Angharad-7-1
+IN	Galessin	PWRN-Angharad-8-1
+IN	Elias_de_Kelliwic'h	PWRN-Angharad-8-1
+IN	Lancelot	PWRN-Angharad-9-1
+IN	Demetra	PWRN-Angharad-9-1
+IN	Le_Maître_d'armes	PWRN-Angharad-10-1
+IN	Kadoc	PWRN-Angharad-10-1
+IN	Venec	PWRN-Angharad-11-1
+IN	Père_Blaise	PWRN-Angharad-11-1
+EDGE	PWRN-Angharad-1-1	PWRN-Angharad-1-2	1.0
+EDGE	PWRN-Angharad-2-1	Perceval	1.0
+EDGE	Arthur	PWRN-Angharad-3-1	1.0
+EDGE	Léodagan	PWRN-Angharad-4-1	1.0
+EDGE	Appius_Manilius	PWRN-Angharad-5-1	1.0
+EDGE	PWRN-Angharad-6-1	PWRN-Angharad-6-2	1.0
+EDGE	PWRN-Angharad-7-1	PWRN-Angharad-7-1	1.0
+EDGE	Loth	PWRN-Angharad-8-1	1.0
+EDGE	Guenièvre	PWRN-Angharad-9-1	1.0
+EDGE	Le_Répurgateur	PWRN-Angharad-10-1	1.0
+EDGE	Bohort	PWRN-Angharad-11-1	1.0
+EDGE	Karadoc	Le_tavernier	1.0
+EDGE	Guethenoc	Roparzh	1.0
+EDGE	Guethenoc	Hervé_De_Rinel	1.0
+EDGE	Bohort	Yvain	1.0
+EDGE	Lancelot	Merlin	1.0
+EDGE	Le_tavernier	Perceval	1.0
+EDGE	Gauvain	Yvain	1.0
+EDGE	Dame_Séli	Guenièvre	1.0
+EDGE	Belt	Roparzh	1.0
+EDGE	Angharad	Karadoc	1.0
+EDGE	Guethenoc	Karadoc	1.0
+EDGE	Arthur	Léodagan	1.0
+EDGE	Dame_Séli	Karadoc	1.0
+EDGE	Angharad	Perceval	1.0
+EDGE	Bohort	Guenièvre	1.0
+EDGE	Dagonet	Lancelot	1.0
+EDGE	Angharad	Le_tavernier	1.0
+EDGE	Loth	Spurius_Cordius_Frontiniu	1.0
+# connected component: 1
+# conversion rate    : 4.15
+# edge reduction     : 65.06
+# compression ratio  : 2.86
+# time since start   : 0.3
+# TOTAL GRAPH METRICS
+# conversion rate  : 4.15
+# edge reduction   : 65.06
+# compression ratio: 2.86
+# total compression time: 0.3
